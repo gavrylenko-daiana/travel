@@ -1,0 +1,166 @@
+main {
+	margin: 0 auto;
+	width: 1000px;
+	max-width: 100%;
+	min-width: 400px;
+    text-align: center;
+}
+.wrapper-of-text {
+    display: flex;
+    align-items: center;
+}
+.wrapper-of-text hr {
+    width: 130px;
+    height: 1.5px;
+    background: #fff;
+}
+
+h1 {
+    color: rgb(255, 217, 0);
+}
+img {
+    max-width: 100%;
+	height: auto;
+    text-align: center;
+}
+
+.focus {
+    transition: all 1s ease;
+}
+.focus:hover {
+border: 20px solid #ffffff;
+border-radius: 5%;
+
+}
+
+h3 {
+    color: rgb(82, 255, 169);
+    width:150px;
+    text-align:center;
+}
+h4 {
+    color: rgb(167, 238, 214);
+}
+p {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    width: 500px;
+}
+a {
+    color: rgb(163, 255, 209);
+}
+body {
+    background-color: #000000;
+    perspective: 5000px;   
+}
+
+
+.wrap {
+    width: 10em;
+    height: 10em;
+    transform-style: preserve-3d;
+    animation: povorot 10s infinite linear;
+    margin: auto;
+}
+.wrap::before,
+.wrap::after {
+display: block;
+position: absolute;
+width: 10em;
+height: 10em;
+}
+.wrap::before {
+transform: rotateX(90deg);
+}
+.wrap::after {
+transform: rotateY(90deg);
+}
+
+.storona {
+    position: absolute;
+    width: 10em;
+    height: 10em;
+    opacity: .7;
+}
+.nazad {
+    transform: translateZ(-5em);
+    background: orange;
+    background-image: url("images/Noruega.jpg");
+    }
+    
+    .pered {
+    transform: translateZ(5em);
+    background: red;
+    background-image: url("images/Poland.jpg");
+    }
+
+        .verh {
+          transform: translateY(-5em) rotateX(90deg);
+          background: skyblue;
+          background-image: url("images/Venecy.jpg");
+          }
+        
+             .niz {
+             transform: translateY(5em) rotateX(90deg);
+             background: green;
+             background-image: url("images/Germany.jpg");
+             }
+
+             .levo {
+                transform: translateX(-5em) rotateY(90deg);
+                background: pink;
+                background-image: url("images/Milan.jpg");
+                }
+                
+                .pravo {
+                transform: translateX(5em) rotateY(90deg);
+                background: purple;
+                background-image: url("images/France.jpg");
+                }
+
+                @keyframes povorot {
+                    30% {
+                        transform: rotateY(360deg);
+                    }
+                }
+
+header{
+	height: 100px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#map {
+    width: 100%;
+    height: 500px;
+    
+}
+
+/* Back to top button */
+#go-to-top{
+    position: fixed;
+    z-index: 999;
+    display: none;
+    bottom:70px;	/* отступ снизу */
+    right:35px;		/* отступ справа*/
+    cursor: pointer;
+    text-align: center;
+    }
+#go-to-top i{
+    /* размер квадрата */
+    width: 45px;
+    height: 40px;
+    display: block;
+    color: #060606;
+    background: #ffffff ;
+    text-align: center;
+    font-size:50px;/*Размер стрелки*/
+    line-height: 55px;/*Растояние между низом и стрелкой*/
+    /* радиус скругления углов */
+    border-radius: 80px;
+    transition:  .3s all;
+    }
+
+    footer {
+        color: skyblue;
+    }
